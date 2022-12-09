@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:local_auth/local_auth.dart';
 
 void main() {
-  runApp(TesteAuth());
+  runApp(const TesteAuth());
 }
 
 class TesteAuth extends StatefulWidget {

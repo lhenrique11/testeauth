@@ -191,26 +191,30 @@ void initState(){
                           ],
                         ),
                       ),
-                      ElevatedButton(
+
+                      Container(
+                        decoration: BoxDecoration(
+                          color:Colors.black,
+                          borderRadius: BorderRadius.circular((40.0))),
+                        child: TextButton.icon(
                         onPressed: _authenticateWithBiometrics,
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: <Widget>[
-                            Text(_isAuthenticating
+                        label: Text(_isAuthenticating
                                 ? 'Cancel'
-                                : 'Authenticate: biometrics only'),
-                            const Icon(Icons.fingerprint),
-                          ],
-                        ),   
+                                : 'Apenas biometria',
+                          style: const TextStyle(color: Colors.white),),
+                        icon: Icon(Icons.fingerprint, color: Colors.greenAccent[700],),)
+                      ),
+
+                      const Divider(height: 100),
+                      ]   
                       ),
                     ],
                   ),
               ],
             ),
-          ],
+          
         ),
-      ),
-    );
+      );
   }
 }
 

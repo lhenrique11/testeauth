@@ -163,7 +163,7 @@ void initState(){
                 Text('Available biometrics: $_availableBiometrics\n'),
                 ElevatedButton(
                   onPressed: _getAvailableBiometrics,
-                  child: const Text('Get available biometric'),
+                  child: const Text('Get available biometrics'),
                 ),
                 const Divider(height: 100),
                 Text('Current State: $_authorized\n'),
